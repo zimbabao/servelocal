@@ -1,0 +1,32 @@
+{
+  "author": "Zimbabao Borbaki",
+
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/Tilde.png"
+     },
+    "default_title": "Serve custom content",
+    "default_popup": "html/popup.html"
+  },
+  "background": {
+    "scripts": ["js/api.js", "js/background.js"],
+    "persistent": true
+  },
+  "description": "Serve custom content",
+  "icons": {
+    "128": "icons/Tilde.png"
+  },
+  "manifest_version": 2,
+  "minimum_chrome_version": "49.0",
+  "name": "Serve custom content",
+  "permissions": [
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "short_name": "Serve custom content",
+  "version": "0.0.1"
+}
